@@ -551,10 +551,16 @@ section { padding: 6rem 5rem; }
 .booking {
   background: var(--white);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 5rem;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
+
+.booking-info { max-width: 720px; }
+
+.booking-info .contact-list { align-items: flex-start; text-align: left; }
 
 .booking-info p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.85; margin-bottom: 2rem; }
 

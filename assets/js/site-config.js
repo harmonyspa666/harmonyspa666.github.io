@@ -4,11 +4,11 @@
    everywhere on the site.
    ============================================================ */
 const SITE_CONFIG = {
-  phone:        "(703) 555-0192",
-  phoneHref:    "tel:+17035550192",
-  addressLine1: "1234 Chain Bridge Rd",
-  addressLine2: "McLean, VA 22101",
-  addressFull:  "1234 Chain Bridge Rd, McLean, VA 22101",
+  phone:        "(240) 715-5939",
+  phoneHref:    "tel:+12407155939",
+  addressLine1: "1481 Chain Bridge Rd, Suite 300",
+  addressLine2: "Mclean, VA 22101",
+  addressFull:  "1481 Chain Bridge Rd, Suite 300, Mclean, VA 22101",
   email:        "hello@harmonywellness.com",
 };
 

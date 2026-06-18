@@ -297,6 +297,76 @@ section { padding: 6rem 5rem; }
 .hero-card-label { font-size: 0.68rem; color: var(--gray-400); margin-bottom: 0.1rem; }
 .hero-card-val { font-size: 0.9rem; font-weight: 500; color: var(--gray-900); }
 
+.member-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2.2rem 2rem;
+  max-width: 340px;
+  box-shadow: 0 12px 40px rgba(58,140,126,0.16);
+  text-align: left;
+}
+
+.member-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  background: var(--teal-light);
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.member-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.member-sub {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+.member-perks {
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
+
+.member-perks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--gray-800);
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.member-perks li strong { color: var(--teal); font-weight: 600; }
+
+.member-perks svg {
+  width: 16px; height: 16px;
+  stroke: var(--teal);
+  fill: none;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.member-note {
+  font-size: 0.72rem;
+  color: var(--gray-400);
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.9rem;
+}
+
 /* ---- 5. STATS STRIP ------------------------------------------ */
 .stats-strip {
   background: var(--gray-900);
@@ -336,8 +406,9 @@ section { padding: 6rem 5rem; }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
+  align-items: start;
 }
 
 .service-card {
@@ -382,7 +453,21 @@ section { padding: 6rem 5rem; }
   font-size: 0.875rem;
   color: var(--gray-600);
   line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.service-price {
+  font-size: 0.82rem;
+  color: var(--gray-900);
+  line-height: 1.6;
+  padding-top: 0.9rem;
   margin-bottom: 1.2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.service-price strong {
+  font-weight: 600;
+  color: var(--teal);
 }
 
 .service-link {
@@ -397,6 +482,72 @@ section { padding: 6rem 5rem; }
 }
 
 .service-card:hover .service-link { gap: 0.6rem; }
+
+/* Add-ons nested under a main service */
+.addons {
+  margin: 0.4rem 0 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.addons-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1.1rem;
+}
+
+.addon-list { list-style: none; }
+
+.addon-item {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.addon-item:last-child { border-bottom: none; padding-bottom: 0; }
+.addon-item:first-child { padding-top: 0; }
+
+.addon-icon {
+  width: 36px; height: 36px;
+  background: var(--teal-light);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.addon-icon svg { width: 17px; height: 17px; stroke: var(--teal); fill: none; stroke-width: 1.5; }
+
+.addon-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.addon-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  color: var(--gray-900);
+}
+
+.addon-price {
+  font-size: 0.76rem;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+.addon-price strong { color: var(--teal); font-weight: 600; }
+
+.addon-desc {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
 
 /* ---- 5. ABOUT ------------------------------------------------ */
 .about {

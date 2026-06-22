@@ -483,6 +483,91 @@ section { padding: 6rem 5rem; }
 
 .service-card:hover .service-link { gap: 0.6rem; }
 
+/* Expanded detail (Acupuncture) */
+.acu-detail {
+  margin-bottom: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.acu-block {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  line-height: 1.65;
+  margin-bottom: 0.9rem;
+}
+
+.acu-label {
+  display: block;
+  font-family: 'DM Serif Display', serif;
+  font-size: 0.95rem;
+  color: var(--gray-900);
+  margin-bottom: 0.2rem;
+}
+
+.acu-conditions {
+  list-style: none;
+  margin-top: -0.3rem;
+}
+
+.acu-conditions li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  color: var(--gray-800);
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.acu-conditions li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.6em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+/* Massage styles nested under a main service */
+.massage-styles {
+  margin: 0.4rem 0 0.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.styles-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1.1rem;
+}
+
+.style-list { list-style: none; }
+
+.style-item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.style-item:last-child { border-bottom: none; padding-bottom: 0; }
+.style-item:first-child { padding-top: 0; }
+
+.style-name {
+  display: block;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  color: var(--gray-900);
+  margin-bottom: 0.3rem;
+}
+
+.style-desc {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
 /* Add-ons nested under a main service */
 .addons {
   margin: 0.4rem 0 1.4rem;

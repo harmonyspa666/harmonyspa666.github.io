@@ -9,7 +9,7 @@ const SITE_CONFIG = {
   addressLine1: "1481 Chain Bridge Rd, Suite 300",
   addressLine2: "Mclean, VA 22101",
   addressFull:  "1481 Chain Bridge Rd, Suite 300, Mclean, VA 22101",
-  email:        "hello@harmonywellness.com",
+  email:        "harmonyspa666@gmail.com",
 };
 
 /* ------------------------------------------------------------

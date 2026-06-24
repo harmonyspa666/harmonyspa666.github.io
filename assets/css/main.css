@@ -298,12 +298,37 @@ section { padding: 6rem 5rem; }
 .hero-card-val { font-size: 0.9rem; font-weight: 500; color: var(--gray-900); }
 
 .member-card {
+  position: relative;
   background: var(--white);
   border-radius: 16px;
   padding: 2.2rem 2rem;
   max-width: 340px;
   box-shadow: 0 12px 40px rgba(58,140,126,0.16);
   text-align: left;
+}
+
+.promo-badge {
+  position: absolute;
+  top: -14px; right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  background: linear-gradient(135deg, #f6a623, #ec6b3f);
+  padding: 0.45rem 0.85rem;
+  border-radius: 100px;
+  box-shadow: 0 6px 16px rgba(236,107,63,0.35);
+}
+
+.promo-badge svg {
+  width: 13px; height: 13px;
+  stroke: var(--white);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
 }
 
 .member-badge {

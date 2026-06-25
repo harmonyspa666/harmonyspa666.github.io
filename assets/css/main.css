@@ -808,6 +808,49 @@ section { padding: 6rem 5rem; }
   line-height: 1.85;
 }
 
+/* ---- 5. GALLERY ---------------------------------------------- */
+.gallery { background: var(--white); }
+
+.gallery-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.gallery-header .eyebrow { justify-content: center; }
+
+.gallery-sub {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 320px;
+  gap: 1rem;
+}
+
+.gallery-item {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--teal-light);
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img { transform: scale(1.05); }
+
 /* ---- 5. BOOKING & FORM --------------------------------------- */
 .booking {
   background: var(--white);
@@ -968,6 +1011,7 @@ footer { background: var(--gray-900); padding: 4rem 5rem 2rem; }
   .hero-left { padding: 5rem 3rem 3rem; }
   .hero-right { min-height: 360px; }
   .services-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
   .about, .booking { grid-template-columns: 1fr; gap: 3rem; }
   .reviews-grid,
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
@@ -984,6 +1028,7 @@ footer { background: var(--gray-900); padding: 4rem 5rem 2rem; }
   .hero-left { padding: 4rem 1.5rem 2.5rem; }
   .hero-title { font-size: 2.8rem; }
   .services-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
   .reviews-grid,
   .testimonials-grid { grid-template-columns: 1fr; }
   .page-header { padding: 7rem 1.5rem 3rem; }

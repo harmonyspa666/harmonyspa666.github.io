@@ -513,6 +513,18 @@ section { padding: 6rem 5rem; }
   color: var(--teal);
 }
 
+.service-insurance {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  background: var(--teal-light);
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.service-insurance strong { font-weight: 600; color: var(--teal); }
+
 .service-link {
   font-size: 0.78rem;
   font-weight: 500;

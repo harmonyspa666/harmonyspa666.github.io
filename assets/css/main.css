@@ -514,16 +514,19 @@ section { padding: 6rem 5rem; }
 }
 
 .service-insurance {
-  font-size: 0.8rem;
-  color: var(--gray-600);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--gray-800);
   line-height: 1.6;
   background: var(--teal-light);
+  border: 1px solid var(--teal-mid);
+  border-left: 4px solid var(--teal);
   border-radius: 8px;
-  padding: 0.7rem 0.9rem;
+  padding: 0.8rem 1rem;
   margin-bottom: 1.2rem;
 }
 
-.service-insurance strong { font-weight: 600; color: var(--teal); }
+.service-insurance strong { font-weight: 700; color: var(--teal); }
 
 .service-link {
   font-size: 0.78rem;

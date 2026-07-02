@@ -24,3 +24,7 @@ build/
 .env
 .env.local
 .env.*.local
+
+# Printable price menu — source + generated PDF, kept local only (not part of the website)
+menu/
+Harmony-Price-Menu.pdf
